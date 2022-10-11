@@ -1,0 +1,4 @@
+name: Teleport
+version: '${project.version}'
+main: de.kolschnet.mc.teleport.Teleport
+api-version: 1.19

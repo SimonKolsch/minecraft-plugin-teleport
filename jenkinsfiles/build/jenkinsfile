@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+    tools {maven "maven"}
+    stages {
+        stage('Build') {
+            steps {
+                echo "Build"
+                sh "mvn clean install"
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "Test"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo "Deploy"
+            }
+        }
+    }
+}
