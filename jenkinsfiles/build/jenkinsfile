@@ -21,9 +21,9 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 echo "Sonar Analysis"
-                withSonarQubeEnv() {
-                  sh "mvn clean verify sonar:sonar -Dsonar.projectKey=Teleport-MC-Plugin"
-                }
+//                 withSonarQubeEnv() {
+//                   sh "mvn clean verify sonar:sonar -Dsonar.projectKey=Teleport-MC-Plugin"
+//                 }
             }
         }
     }
